@@ -4,7 +4,7 @@ export const Item = ({ product }) => {
         
             <div className=" mx-auto border-gray-200 p-3 my-2  rounded-md shadow-sm hover:shadow-md  ">
                 <Link to={`/item/${product.id}`}>
-                    <img className="w-100" src={`../img/${product.img}`} alt={`Imagen de ${product.name}`} />
+                    <img className="w-100" src={`${product.img}`} alt={`Imagen de ${product.name}`} />
                     <div>
                         <h2 className="font-extrabold uppercase title-prod">{product.name} {product.capacity}</h2>
                         <h3 className="font-semibold  capitalize">{product.category}</h3>

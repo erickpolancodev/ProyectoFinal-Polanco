@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Amazon Echo Dot",
+        "capacity": "",
+        "price": 65,
+        "stock": 12,
+        "img": "amazon-echo-dot-5.png",
+        "category": "amazon"
+    },
+    {
+        "id": 2,
+        "name": "Amazon Firestick 4K MAX",
+        "capacity": "",
+        "price": 45,
+        "stock": 5,
+        "img": "amazon-firestick-max.png",
+        "category": "amazon"
+    },
+    {
+        "id": 3,
+        "name": "Amazon Firestick Lite",
+        "capacity": "",
+        "price": 35,
+        "stock": 5,
+        "img": "firestick-lite.jpg",
+        "category": "amazon"
+    },
+    {
+        "id": 4,
+        "name": "Amazon Tablet Fire 8",
+        "capacity": "",
+        "price": 250,
+        "stock": 5,
+        "img": "amazon-fire-8.jpg",
+        "category": "amazon"
+    },
+    {
+        "id": 5,
+        "name": "Apple TV 4K",
+        "capacity": "",
+        "price": 140,
+        "stock": 8,
+        "img": "apple-tv-4k.jpg",
+        "category": "apple"
+    },
+    {
+        "id": 6,
+        "name": "iPhone 15 Pro Max",
+        "capacity": "256 GB",
+        "price": 1400,
+        "stock": 4,
+        "img": "iphone-14-pro-max.png",
+        "category": "apple"
+    },
+    {
+        "id": 7,
+        "name": "Samsung S23 Ultra",
+        "capacity": "512 GB",
+        "price": 1100,
+        "stock": 5,
+        "img": "samsung-s23-ultra.png",
+        "category": "samsung"
+    },
+    {
+        "id": 8,
+        "name": "Samsung Galaxy Watch 6",
+        "capacity": "32 Gb",
+        "price": 450,
+        "stock": 10,
+        "img": "galaxy-watch-6.jpg",
+        "category": "samsung"
+    }
+]

@@ -1,6 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './styles/App.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/NavBar'
 import { HeroContainer } from './components/HeroContainer'
 import { Footer } from './components/Footer'
@@ -9,12 +8,17 @@ import { ItemDetailsContainer } from './components/ItemDetailsContainer'
 import { Cart } from './components/Cart'
 import { Checkout } from './components/Checkout'
 import { NotFound } from './components/NotFound'
+import { CarritoProvider } from './context/CartContext.jsx'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 export const App = () =>{
 
   return (
     <>
       <BrowserRouter>
+      <CarritoProvider>
         <Navbar />
+        <ToastContainer />
         <HeroContainer/>
         <Routes>
             <Route path='/' element={<ItemListContainer />}/>
@@ -25,6 +29,7 @@ export const App = () =>{
             <Route path='*' element={<NotFound/>} />
         </Routes>
         <Footer/>
+        </CarritoProvider>
       </BrowserRouter>
       
     </>

@@ -142,8 +142,8 @@ const prods = [
 export const createProducts = async () => {
     prods.forEach(async (prod) => {
         await addDoc(collection(bdd, "productos"), {
-            title: prod.title,
-            size: prod.size,
+            name: prod.name,
+            capacity: prod.capacity,
             price: prod.price,
             stock: prod.stock,
             category: prod.category,
@@ -152,6 +152,8 @@ export const createProducts = async () => {
     })
 
 }
+
+//createProducts()
 
 // Consultar productos
 export const getProducts = async () => {

@@ -4,17 +4,17 @@ export const Categories = () => {
         <div className="flex space-x-4">
             <li className="text-white">
                 <Link to={'/category/apple'}>
-                    <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Apple</button>
+                    <button className="bg-transparent text-white rounded-md px-3 py-2 text-sm font-medium hover:border-2 border-white">Apple</button>
                 </Link>
             </li>
             <li className="text-white">
                 <Link to={'/category/samsung'}>
-                    <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Samsung</button>
+                    <button className="bg-transparent text-white rounded-md px-3 py-2 text-sm font-medium hover:border-2 border-white">Samsung</button>
                 </Link>
             </li>
             <li className="text-white">
                 <Link to={'/category/amazon'}>
-                    <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Amazon</button>
+                    <button className="bg-transparent text-white rounded-md px-3 py-2 text-sm font-medium hover:border-2 border-white ">Amazon</button>
                 </Link>
             </li>
         </div>

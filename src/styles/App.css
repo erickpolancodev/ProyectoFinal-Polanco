@@ -10,10 +10,15 @@ body{
 .footer-brand{
     background-color: #f9f9f9;
 }
-.copyright{
-    background-color: #050557;
+header, .copyright{
+    background-color: #050557 !important;
 }
 
+h1{
+    font-size: 40px !important;
+    color: #050557 !important;
+    text-transform: capitalize;
+}
 
 .title-prod{
     color: #050557;

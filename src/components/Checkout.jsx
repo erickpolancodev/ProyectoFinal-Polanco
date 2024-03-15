@@ -3,8 +3,9 @@ import { useCarritoContext } from "../context/CartContext.jsx"
 import { Link, useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from "../firebase/firebase.js"
+import { HeroContainer } from "./HeroContainer.jsx"
 
-export const Checkout = () => {
+export const Checkout = ({actual}) => {
     const formRef = useRef()
     const navigate = useNavigate()//Devuelve la locacion actual de mi componente (ruta)
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
@@ -88,22 +89,25 @@ export const Checkout = () => {
 
                     </>
                     :
-                    <div className="max-w-md mx-auto p-6 mt-2 bg-gray-200 rounded-md shadow-md">
-                        <form action="" ref={formRef} onSubmit={handleSubmit}>
-                            <label className="block mb-1 text-gray-700">Nombre: </label>
-                            <input type="text" className="w-full p-2 mb-3 border rounded-md" name="nombre" />
-                            <label className="block mb-1 text-gray-700">Apellido: </label>
-                            <input type="text" className="w-full p-2 mb-3 border rounded-md" name="apellido" />
-                            <label className="block mb-1 text-gray-700">Direccion: </label>
-                            <input type="text" className="w-full p-2 mb-3 border rounded-md" name="direccion" />
-                            <label className="block mb-1 text-gray-700">DNI: </label>
-                            <input type="number" className="w-full p-2 mb-3 border rounded-md" name="dni" />
-                            <label className="block mb-1 text-gray-700">Email: </label>
-                            <input type="email" className="w-full p-2 mb-3 border rounded-md" name="email" />
-                            <label className="block mb-1 text-gray-700">Telefono: </label>
-                            <input type="number" className="w-full p-2 mb-3 border rounded-md" name="telefono" />
-                            <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded-md">Finalizar</button>
-                        </form>
+                    <div className="p-4">
+                        <HeroContainer titulo={actual} />
+                        <div className="max-w-lg mx-auto my-10 p-6 mt-2  rounded-md ">
+                            <form action="" ref={formRef} onSubmit={handleSubmit}>
+                                <label className="block mb-1 text-gray-700">Nombre: </label>
+                                <input type="text" className="w-full p-2 mb-3 border-b-2" name="nombre" />
+                                <label className="block mb-1 text-gray-700">Apellido: </label>
+                                <input type="text" className="w-full p-2 mb-3 border-b-2" name="apellido" />
+                                <label className="block mb-1 text-gray-700">Direccion: </label>
+                                <input type="text" className="w-full p-2 mb-3 border-b-2" name="direccion" />
+                                <label className="block mb-1 text-gray-700">DNI: </label>
+                                <input type="number" className="w-full p-2 mb-3 border-b-2" name="dni" />
+                                <label className="block mb-1 text-gray-700">Email: </label>
+                                <input type="email" className="w-full p-2 mb-3 border-b-2" name="email" />
+                                <label className="block mb-1 text-gray-700">Telefono: </label>
+                                <input type="number" className="w-full p-2 mb-3 border-b-2" name="telefono" />
+                                <button type="submit" className="w-full p-2 my-8 bg-blue-500 text-white rounded-md">Finalizar</button>
+                            </form>
+                        </div>
                     </div>
             }
         </>

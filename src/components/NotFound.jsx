@@ -1,5 +1,12 @@
-export const NotFound = () => {
+import { HeroContainer } from "./HeroContainer"
+export const NotFound = ({actual}) => {
     return(
-        <h1>404 Not Found</h1>
+        <>
+            <HeroContainer titulo={actual}/>
+            <div className="min-h-20 flex justify-center items-center">
+                <p>Página no encontrada</p>
+            </div>
+        </>
+        
     )
 }

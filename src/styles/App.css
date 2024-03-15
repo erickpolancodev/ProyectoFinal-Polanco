@@ -27,3 +27,7 @@ h1{
 .btn-azul{
     background-color: #050557;
 }
+li{
+    text-decoration: none;
+    list-style: none !important;
+}

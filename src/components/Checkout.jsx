@@ -105,7 +105,7 @@ export const Checkout = ({actual}) => {
                                 <input type="email" className="w-full p-2 mb-3 border-b-2" name="email" />
                                 <label className="block mb-1 text-gray-700">Telefono: </label>
                                 <input type="number" className="w-full p-2 mb-3 border-b-2" name="telefono" />
-                                <button type="submit" className="w-full p-2 my-8 bg-blue-500 text-white rounded-md">Finalizar</button>
+                                <button type="submit" className="btn-azul w-full p-2 my-8  text-white rounded-md">Finalizar</button>
                             </form>
                         </div>
                     </div>

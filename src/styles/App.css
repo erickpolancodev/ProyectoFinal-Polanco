@@ -25,7 +25,7 @@ h1{
 }
 
 .btn-azul{
-    background-color: #050557;
+    background-color: #050557 !important;
 }
 li{
     text-decoration: none;

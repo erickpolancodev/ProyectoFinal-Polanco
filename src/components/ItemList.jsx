@@ -2,7 +2,7 @@ import { Item } from "./Item"
 import { ItemCart } from "./ItemCart"
 export const ItemList = ({ products, plantilla }) => {
     return (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
             {
                 plantilla === 'Item'
                     ?

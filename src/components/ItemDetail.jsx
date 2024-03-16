@@ -31,11 +31,11 @@ export const ItemDetail = ({ item }) => {
                     <FontAwesomeIcon icon={faAngleLeft} /> Volver
                 </button>
             </Link>
-            <div className="img-product">
-                <img className="w-full h-100 object-cover mb-6" src={`${item.img}`} alt={`Imagen de ${item.name}`} />
+            <div className="img-product mt-6">
+                <img className="min-w-20 w-full h-100 object-cover mb-6" src={`${item.img}`} alt={`Imagen de ${item.name}`} />
             </div>
             
-            <div className="text-justify detail-product">
+            <div className="text-justify detail-product mt-6">
                 <h2 className="text-xl font-bold mb-2">{item.name}</h2>
                 <p className="text-gray-700 mb-2 font-semibold">Capacidad: {(item.capacity)? item.capacity : 'No aplica'}</p>
                 <p className="text-gray-700 mb-2 font-semibold">Stock: {item.stock}</p>

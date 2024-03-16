@@ -7,7 +7,7 @@ export const ItemCart = ({ product }) => {
     const { removeItem, updateItem } = useCarritoContext()
     const { count, increment, decrement } = useCounter(product.quantity, product.stock, 1)
     return (
-        <div className="flex items-center justify-center p-4 border-gray-300 text-center flex-column ">
+        <div className="flex items-center justify-center p-4 border-gray-300 text-center flex-column flex-wrap">
             <div className="mr-6">
                 <img src={`${product.img}`} alt={`Imagen de ${product.name}`} className="w-48 h-48 object-cover" />
             </div>

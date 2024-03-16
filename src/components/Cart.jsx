@@ -21,22 +21,23 @@ export const Cart = ({actual}) => {
                     :
                     <div>
                         {<ItemList products={carrito} plantilla="ItemCart" />}
-                        <div className="my-10 flex justify-around w-2/3 mx-auto">
+                        <div className="my-10 flex justify-around mx-auto lg:w-2/3 md:w-full sm:w-full">
                             <p className="my-4 px-4">TOTAL DE LA COMPRA: <strong>$USD {totalPrice()}</strong> </p>
-                            
-                            <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" onClick={emptyCart}>
-                                Vaciar Carrito
-                            </button>
-                            <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" >
-                                <Link to={'/'}>
-                                    Continuar Comprando
-                                </Link>
-                            </button>
-                            <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" >
-                                <Link to={'/checkout'}>
-                                    Finalizar compra
-                                </Link>
-                            </button>
+                            <div>
+                                <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" onClick={emptyCart}>
+                                    Vaciar Carrito
+                                </button>
+                                <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" >
+                                    <Link to={'/'}>
+                                        Continuar Comprando
+                                    </Link>
+                                </button>
+                                <button className="bg-indigo-500 text-white py-2 rounded px-4 m-2" >
+                                    <Link to={'/checkout'}>
+                                        Finalizar compra
+                                    </Link>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
